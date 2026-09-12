@@ -28,7 +28,13 @@ To get started with trt_pose, follow these steps.
     sudo python3 setup.py install --plugins
     ```
 
-3. Install other miscellaneous packages
+3. Install the ONNX dependencies used by the `use_onnx=True` conversion path
+
+    ```python
+    sudo pip3 install onnx onnx-graphsurgeon
+    ```
+
+4. Install other miscellaneous packages
 
     ```python
     sudo pip3 install tqdm cython pycocotools
@@ -68,7 +74,7 @@ To run the live Jupyter Notebook demo on real-time camera input, follow these st
 - [torch2trt](http://github.com/NVIDIA-AI-IOT/torch2trt) - An easy to use PyTorch to TensorRT converter
 
 - [JetBot](http://github.com/NVIDIA-AI-IOT/jetbot) - An educational AI robot based on NVIDIA Jetson Nano
-- [JetRacer](http://github.com/NVIDIA-AI-IOT/jetracer) - An educational AI racecar using NVIDIA Jetson Nano
+- [JetRacer](http://github.com/NVIDIA-AI-IOT/jetracer) - An educational AI racecar using NVIDIA Jetson
 - [JetCam](http://github.com/NVIDIA-AI-IOT/jetcam) - An easy to use Python camera interface for NVIDIA Jetson
 
 ## References
